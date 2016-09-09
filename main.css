@@ -1,0 +1,49 @@
+body {
+    font-family: 'Architects Daughter', sans-serif;
+}
+.logo {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background: #fbc6c6;
+    float: left;
+    margin: 10px
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'BioRhyme', serif;
+}
+ul {
+    margin: 0px 21px;
+    padding: 0px;
+}
+li {
+    position: relative;
+    background: #fff;
+    padding: 10px 15px;
+    border-left: 8px double #fbc6c6;
+    border-top: 1px solid #a8cbf7;
+    list-style: none;
+    font-size: 1.1em;
+    color: #888;
+}
+
+li.running {
+    color: #000;
+    border-left:8px solid #ff9d9d;
+}
+
+/* li .toggle_button {
+    position: absolute;
+    right: 10px;
+} */
+
+button {
+    padding: .5em 2em;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background: #5c0;
+}

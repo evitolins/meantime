@@ -7,11 +7,11 @@ body {
     height: 30px;
     background: #fbc6c6;
     float: left;
-    margin: 10px
+    margin: 10px;
 }
 h1 {
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px;
     font-family: 'BioRhyme', serif;
 }
 ul {

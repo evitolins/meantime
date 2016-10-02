@@ -5,22 +5,24 @@
   <meta name="viewport" content="width=device-width">
     <link href="main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|BioRhyme" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script>
+    <!-- <script src="https://unpkg.com/vue@2.0.1/dist/vue.js"></script> -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js"></script>
-  <title>Teamtime</title>
+  <title>Meantime</title>
 </head>
 <body>
     <div id="app">
         <h1><div class='logo'></div> Meantime</h1>
-        <div>&nbsp;{{current_time}}</div>
         <ul>
-            <li v-for='timer in timers' v-bind:class="{ 'running': timer.is_running}" v-on:click="toggle_timer(timer)"><b>{{timer.name}}</b> - {{timer.elapsed()}}</li>
+            <li v-for='timer in timers' v-bind:class="{ 'running': timer.is_running}" v-on:click="toggle_timer(timer)"><a v-if="timer.link" href="{{timer.link}}"><i class="fa fa-github"></i></a> <b>{{timer.name}}</b> - {{timers_ui[$index].display}}</li>
         </ul>
         <br/>
         <div align=center>
             <button v-on:click="add_timer">new</button>
         </div>
     </div>
+    <script src="bower_components/refresher.js/refresher.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+{
+  "name": "meantime",
+  "homepage": "https://github.com/evitolins/meantime",
+  "authors": [
+    "Eriks Vitolins <evitolins@gmail.com>"
+  ],
+  "description": "simple time tracker for your tasks",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "time",
+    "tracker",
+    "tasks",
+    "javascript",
+    "html5",
+    "vuejs"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "refresher.js": "~1.0.3"
+  }
+}
